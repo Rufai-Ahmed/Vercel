@@ -28,6 +28,11 @@ const WriteUp = styled.div`
   font-weight: 400;
   font-size: 18px;
   color: grey;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    width: 260px;
+  }
 `;
 
 const Text = styled.div`
@@ -35,6 +40,10 @@ const Text = styled.div`
   color: white;
   font-weight: 700;
   margin: 10px 0px;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    width: 250px;
+  }
 `;
 
 const Icon = styled.div`
@@ -51,7 +60,11 @@ const Icon = styled.div`
 
 const Container = styled.div`
   height: 250px;
-  background-color: black;
+
   width: 100%;
   margin-left: 50px;
+
+  @media screen and (max-width: 768px) {
+    height: 260px;
+  }
 `;

@@ -39,12 +39,20 @@ export default CodeEditor;
 
 const Img = styled.img`
   margin-left: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    width: 260px;
+  }
 `;
 
 const Components = styled.div`
   width: 50%;
   height: 85vh;
   //   background-color: blue;
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
 `;
 
 const Code = styled.div`
@@ -52,6 +60,10 @@ const Code = styled.div`
   height: 45vh;
   display: flex;
   align-items: start;
+
+  @media screen and (max-width: 768px) {
+    width: 40%;
+  }
 `;
 
 const Container = styled.div`
@@ -61,4 +73,9 @@ const Container = styled.div`
   align-items: start;
   background-color: black;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
 `;

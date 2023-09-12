@@ -30,6 +30,11 @@ const WriteUp = styled.div`
   font-size: 24px;
   font-weight: 500px;
   margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    width: 400px;
+  }
 `;
 
 const LargeText = styled.div`
@@ -44,6 +49,10 @@ const LargeText = styled.div`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #cececeff, #f0f0f0ff);
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 const Circle = styled.div`

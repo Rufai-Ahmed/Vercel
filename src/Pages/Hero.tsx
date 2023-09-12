@@ -4,19 +4,19 @@ import { useRef, useEffect, useState } from "react";
 
 const Hero = () => {
   const Dev: string[] = [
-    " background-image: linear-gradient(to right, #0089ecff, #00cdddff);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
+    "background-image: linear-gradient(to right, #0089ecff, #00cdddff);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
     "white",
     "white",
   ];
   const Prev: string[] = [
     "white",
-    " background-image: linear-gradient(to right, purple, violet);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
+    "background-image: linear-gradient(to right, purple, violet);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
     "white",
   ];
   const Shi: string[] = [
     "white",
     "white",
-    " background-image: linear-gradient(to right, orangered, orange);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
+    "background-image: linear-gradient(to right, orangered, orange);-webkit-text-fill-color: transparent;-webkit-background-clip: text",
   ];
 
   const Devbtn: string[] = [
@@ -157,6 +157,10 @@ const Wrap = styled.div`
 const H = styled.div`
   display: flex;
   transition: all 350ms ease;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const BtnHolder = styled.div`
@@ -165,6 +169,12 @@ const BtnHolder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+    height: 30vh;
+  }
 `;
 
 const Button1 = styled.button`
@@ -184,6 +194,10 @@ const Button1 = styled.button`
     cursor: pointer;
     background-color: color;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 18px 80px;
+  }
 `;
 const Button = styled.button`
   font-weight: 500;
@@ -199,6 +213,11 @@ const Button = styled.button`
   transition: all 350ms;
   &:hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 40px;
+    margin-left: 35px;
   }
 `;
 

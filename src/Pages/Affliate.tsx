@@ -67,8 +67,8 @@ const Affliate = () => {
 
           <Logo>
             <svg
-              width="96"
-              height="32"
+              width="50"
+              height="22"
               viewBox="0 0 96 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,12 @@ const Affliate = () => {
 
 export default Affliate;
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 1px;
+    height: auto;
+  }
+`;
 
 const Logos = styled.div`
   width: 70%;
@@ -334,6 +339,13 @@ const Logos = styled.div`
   justify-content: center;
   justify-content: space-between;
   margin-left: 200px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+    align-items: start;
+  }
 `;
 
 const Text = styled.div`

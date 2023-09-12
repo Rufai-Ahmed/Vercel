@@ -74,6 +74,10 @@ const Icons = styled.div`
   width: 40%;
   justify-content: space-between;
   display: flex;
+
+  @media screen and (max-width: 768px) {
+    width: 60%;
+  }
 `;
 
 const Frames = styled.div`
@@ -82,6 +86,10 @@ const Frames = styled.div`
   display: flex;
   align-items: start;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    justify-content: start;
+    margin-left: 220px;
+  }
 `;
 
 const WriteUp = styled.div`
@@ -92,6 +100,11 @@ const WriteUp = styled.div`
   font-size: 24px;
   font-weight: 500px;
   margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    width: 400px;
+  }
 
   span {
     color: #de1d8dff;
@@ -115,6 +128,10 @@ const LargeText = styled.div`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #cececeff, #f0f0f0ff);
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 const Circle = styled.div`
