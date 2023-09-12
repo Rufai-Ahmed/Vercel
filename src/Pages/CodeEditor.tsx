@@ -41,7 +41,7 @@ const Img = styled.img`
   margin-left: 100px;
 
   @media screen and (max-width: 768px) {
-    margin: 0;
+    margin-left: 30px;
     width: 260px;
   }
 `;
@@ -76,6 +76,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     min-height: 100vh;
-    padding-bottom: 100px;
+    padding-bottom: 400px;
+    flex-direction: column;
   }
 `;

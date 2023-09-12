@@ -174,6 +174,7 @@ const BtnHolder = styled.div`
     flex-direction: column;
     gap: 20px;
     height: 30vh;
+    margin: 50px 0;
   }
 `;
 
@@ -244,6 +245,10 @@ const DPS = styled.div`
   font-size: 120px;
   color: white;
   font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 100px;
+  }
 `;
 
 const Container = styled.div`

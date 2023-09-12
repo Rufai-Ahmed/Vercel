@@ -32,7 +32,7 @@ const WriteUp = styled.div`
   margin-top: 30px;
 
   @media screen and (max-width: 768px) {
-    font-size: 17px;
+    font-size: 15px;
     width: 400px;
   }
 `;
@@ -51,7 +51,7 @@ const LargeText = styled.div`
   background-image: linear-gradient(to top, #cececeff, #f0f0f0ff);
 
   @media screen and (max-width: 768px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 `;
 

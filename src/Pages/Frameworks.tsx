@@ -88,7 +88,7 @@ const Frames = styled.div`
   justify-content: center;
   @media screen and (max-width: 768px) {
     justify-content: start;
-    margin-left: 220px;
+    margin-left: 20px;
   }
 `;
 
@@ -103,7 +103,7 @@ const WriteUp = styled.div`
 
   @media screen and (max-width: 768px) {
     font-size: 17px;
-    width: 400px;
+    width: 384px;
   }
 
   span {
